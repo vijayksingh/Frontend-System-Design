@@ -1,6 +1,15 @@
 # Frontend-System-Design
 A collection of notes and examples related to Frontend system design. 
 
+## Common Concepts
+Most application would always have some common responsibilities no matter what the domain. 
+
+- Authentication and Authorization
+- User Profile and Settings
+- Search and Recommendation
+
+We will try to create reusable template for all these Concerns so that we can put them into our example System Design questions.
+
 I am going to follow RADIO Framework to solve System Design Questions. 
 A quick summary : 
 > Start by understanding the Requirements, defining the high level Architecture and the Data Model. Then define the Interfaces between the components in the product and talk about any Optimizations or dive deep into specific areas which require special attention
@@ -107,6 +116,67 @@ The API design for a chat application could include the following endpoints:
 Overall, these endpoints would provide the necessary functionality for a chat application, allowing users to create and manage accounts, create and participate in conversations, and customize their settings and preferences.
 
 
+### System Design : Pinterest 
+
+#### Functional Requirements
+- User profile and settings: Pinterest allows users to create and customize their profile, including their name, profile picture, and a bio. This component is responsible for storing and managing user profile information, as well as allowing users to update their settings, such as their email and password.
+
+- Boards and pins: The core feature of Pinterest is the ability to save and organize images and videos into boards. This component is responsible for creating, managing, and displaying boards and pins. It must also support features such as pinning, repinning, and commenting on pins.
+
+- Search and recommendation: To help users discover new content, Pinterest uses a search and recommendation engine that indexes and ranks content based on various factors, such as user interests, engagement, and social connections. This component is responsible for providing search and recommendation functionality to users.
+
+
+
+#### Non Functional Requirement
+
+#### API Design 
+
+`GET /boards:` This endpoint allows users to retrieve a list of all the boards they have created.
+
+`POST /boards:` This endpoint allows users to create a new board. It accepts a JSON object containing the board name and description as input.
+
+`GET /boards/:board_id:` This endpoint allows users to retrieve the details of a specific board, identified by its board_id.
+
+`PUT /boards/:board_id:` This endpoint allows users to update the details of a specific board, identified by its board_id. It accepts a JSON object containing the updated board name and description as input.
+
+`DELETE /boards/:board_id:` This endpoint allows users to delete a specific board, identified by its board_id.
+
+`GET /boards/:board_id/pins:` This endpoint allows users to retrieve a list of all the pins on a specific board, identified by its board_id.
+
+`POST /boards/:board_id/pins:` This endpoint allows users to add a new pin to a specific board, identified by its board_id. It accepts a JSON object containing the pin URL and description as input.
+
+`GET /boards/:board_id/pins/:pin_id:` This endpoint allows users to retrieve the details of a specific pin on a specific board, identified by the board_id and pin_id.
+
+`PUT /boards/:board_id/pins/:pin_id:` This endpoint allows users to update the details of a specific pin on a specific board, identified by the board_id and pin_id. It accepts a JSON object containing the updated pin URL and description as input.
+
+`DELETE /boards/:board_id/pins/:pin_id:` This endpoint allows users to delete a specific pin on a specific board, identified by the board_id and pin_id.
+
+
+
+### System Design: Excalidraw (Drawing Tool)
+
+#### General Requirements
+- As a user, I want to be able to create a new drawing by clicking on a "New Drawing" button.
+
+- As a user, I want to be able to select different drawing tools, such as a pen, eraser, and shape tools, to create and edit my drawing.
+
+- As a user, I want to be able to customize the properties of my drawing tools, such as the line thickness and color, to create the desired effect.
+
+- As a user, I want to be able to zoom and pan on the drawing canvas to see and edit my drawing in detail.
+
+- As a user, I want to be able to save my drawing to a local or cloud-based data storage system.
+
+- As a user, I want to be able to load and view my saved drawings from the data storage system.
+
+- As a user, I want to be able to export my drawings in different file formats, such as JPEG, PNG, and SVG.
+
+- As a user, I want to be able to collaborate with other users in real-time on the same drawing.
+
+- As a user, I want to be able to see the changes made by other users on the drawing in real-time.
+
+- As a user, I want to be able to resolve conflicts if two users try to edit the same part of the drawing at the same time.
+
+#### API Design (Excalidraw)
 
 
 

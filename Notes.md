@@ -48,6 +48,63 @@ Overall, the requirements and frontend component design for a Google Calendar ap
 
 ### System Design : Chat Application
 
+#### General Requirements
+As a user, I want to be able to create a new account and log in to the chat application so that I can access my conversations and messages.
+
+As a user, I want to be able to create and join conversations with other users so that I can communicate with them in real time.
+
+As a user, I want to be able to send and receive messages in my conversations so that I can have ongoing discussions with other users.
+
+As a user, I want to be able to add and remove participants from my conversations so that I can control who can see and contribute to the conversation.
+
+As a user, I want to be able to search for past conversations and messages so that I can easily find information and continue previous discussions.
+
+As a user, I want to be able to customize my settings and preferences for the chat application so that I can control how the application behaves and looks.
+
+
+#### API Design 
+The API design for a chat application could include the following endpoints:
+
+`POST /users:` Create a new user account.
+
+`POST /users/authenticate:` Authenticate an existing user and generate an access token.
+
+`GET /conversations:` Retrieve a list of the user's conversations.
+
+`POST /conversations:` Create a new conversation with one or more participants.
+
+`GET /conversations/:id:` Retrieve the details and messages for a specific conversation.
+
+`POST /conversations/:id/messages:` Send a message to a specific conversation.
+
+`POST /conversations/:id/participants:` Add one or more participants to a specific conversation.
+
+`DELETE /conversations/:id/participants:` Remove one or more participants from a specific conversation.
+
+`GET /messages:` Search for past messages across all of the user's conversations.
+
+`GET /settings:` Retrieve the user's current settings and preferences.
+
+`PUT /settings:` Update the user's settings and preferences.
+
+`GET /notifications:` Retrieve a list of the user's pending notifications.
+
+#### Component Design 
+- LoginForm: A component for the login or signup screen that allows users to authenticate their identity and access the application.
+
+- ConversationList: A component that displays a list of the user's conversations and allows them to create or join new ones.
+
+- Conversation: A component that shows the messages in a given conversation, allows the user to send new messages, and displays the list of participants in the conversation.
+
+- Settings: A component that allows the user to customize their preferences and settings for the chat application.
+
+- Notifications: A component that displays alerts for new messages and other events in the chat application.
+
+- Search: A component that allows the user to search for past conversations and messages.
+
+
+
+Overall, these endpoints would provide the necessary functionality for a chat application, allowing users to create and manage accounts, create and participate in conversations, and customize their settings and preferences.
 
 
 

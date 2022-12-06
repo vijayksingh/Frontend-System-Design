@@ -55,7 +55,7 @@ To create a Google Calendar application, the following requirements and frontend
 
 Overall, the requirements and frontend component design for a Google Calendar application would involve a combination of forms, views, controls, and notifications to enable users to manage and interact with their calendar events in a user-friendly and intuitive manner.
 
-### System Design : Chat Application
+## System Design : Chat Application
 
 #### General Requirements
 As a user, I want to be able to create a new account and log in to the chat application so that I can access my conversations and messages.
@@ -116,7 +116,7 @@ The API design for a chat application could include the following endpoints:
 Overall, these endpoints would provide the necessary functionality for a chat application, allowing users to create and manage accounts, create and participate in conversations, and customize their settings and preferences.
 
 
-### System Design : Pinterest 
+## System Design : Pinterest 
 
 #### Functional Requirements
 - User profile and settings: Pinterest allows users to create and customize their profile, including their name, profile picture, and a bio. This component is responsible for storing and managing user profile information, as well as allowing users to update their settings, such as their email and password.
@@ -153,7 +153,7 @@ Overall, these endpoints would provide the necessary functionality for a chat ap
 
 
 
-### System Design: Excalidraw (Drawing Tool)
+## System Design: Excalidraw (Drawing Tool)
 
 #### General Requirements
 - As a user, I want to be able to create a new drawing by clicking on a "New Drawing" button.

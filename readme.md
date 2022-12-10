@@ -178,5 +178,13 @@ Overall, these endpoints would provide the necessary functionality for a chat ap
 
 #### API Design (Excalidraw)
 
+## Machine Coding Interview Frontend
 
+- [ ] Holy Grail Layout
+- [ ] Progress Bar
+- [ ] Analog Clock
+- [x] [Counter](https://playcode.io/964611)
+- [ ] Sign Up Form
+- [x] Calculator
+- [x] [Carousel](https://playcode.io/965141)
 

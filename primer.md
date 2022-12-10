@@ -70,4 +70,10 @@ Security: The security of a frontend application can be an important factor when
 
 Development complexity: The development complexity of a frontend application can be an important factor when choosing a rendering strategy. Some rendering strategies, such as server-side rendering, can add additional complexity to the development process, while others, such as client-side rendering, can be simpler and more straightforward.
 
-
+## TODO
+- [ ] Module Federation
+- [ ] State Management in Module Federation
+- [ ] CORS
+- [ ] Browser Storage (Pro / Cons / Use Cases) 
+- [ ] Authentication
+- [ ] HTTP

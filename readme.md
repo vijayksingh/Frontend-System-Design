@@ -188,3 +188,15 @@ Overall, these endpoints would provide the necessary functionality for a chat ap
 - [x] Calculator
 - [x] [Carousel](https://playcode.io/965141)
 
+## Resources 
+
+### For Machine Coding 
+- [ ] [GreateFrontend](https://www.greatfrontend.com/)
+- [ ] [ClientSide.dev](https://www.clientside.dev/)
+- [ ] [BFE.dev](https://bfe.dev/)
+
+### For Data Structure 
+- [ ] [AlgoMonster](https://algo.monster/)
+- [ ] [Leetcode]
+- [ ] [Structy.net](https://structy.net/)
+
